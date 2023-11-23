@@ -1,6 +1,9 @@
-
 function findNeedle(haystack){
-    // Your code here
+    for(let i = 0; i < haystack.length; i++){
+        if(haystack[i] === "needle"){
+            return `found the needle at position ${i}`;
+        }
+    }
 }
 
 module.exports = findNeedle;
